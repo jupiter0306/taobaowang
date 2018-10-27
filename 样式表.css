@@ -53,7 +53,11 @@ padding: 0;}
     border:2px solid orangered;
     border-bottom-left-radius:20px;
     border-top-left-radius:20px;
-    width:600px;height:38px;
+    width:70%;
+    height:38px;
+    position: absolute;
+    left:0px;
+    top:3px;
     background-image: url(imgs/search.png);
     background-repeat: no-repeat;
     background-position: 3px 3px;
@@ -63,14 +67,14 @@ background-color: rgb(253, 93, 34);
 border:none; 
 border-bottom-right-radius:20px;
 border-top-right-radius:20px;
-width:65px;
+width:66px;
 height:43px;
 font-size:17px; 
 font-weight: bold;
 color:white;
-position:relative;
-right:8px;
-top:2.6px;
+position: relative;
+left:51%;
+top:3px;
 
 }
 
