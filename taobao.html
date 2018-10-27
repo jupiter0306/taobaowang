@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+            <meta charset="UTF-8">
+            <title>淘宝网www.taobao.com</title>
+            <link rel="stylesheet" type="text/css" href="样式表.css">
+            <script src="jquery-3.3.1.min.js"></script>
+            <script src="lunbo.js"></script>
+
+
+    </head>
+
+    <body style="background-color:rgb(243, 241, 241);" id="top">
+        <header style="background-color:rgb(243, 241, 241); position: relative;height: 30px;font-size: 12px;">
+            <div style="float:left;">
+               <ul class="keylist" id="toplist">
+                   <li>中国大陆 </li>
+                   <li>淘小宝</li>
+                   <li>
+                       <a href="#" >消息</a>
+                       <ul class="hiddenlist">
+                           <li><a href="#">查看全部</a></li>
+                       </ul>
+                   </li>
+                   <li><a href="#">手机逛淘宝</a></li>
+
+               </ul>
+            </div>
+            <div style="float: right; ">   
+                    <ul class="keylist">
+                            <li>
+                                    <a href="#" >我的淘宝</a>
+                                    <ul class="hiddenlist">
+                                        <li><a href="#">已买到的宝贝</a></li>
+                                        <li><a href="#">我的足迹</a></li>
+                                    </ul>
+                             </li>
+                             <li><a href="#">购物车</a></li>
+                             <li>
+                                    <a href="#" >收藏夹</a>
+                                    <ul class="hiddenlist">
+                                        <li><a href="#">收藏的店铺</a></li>
+                                        <li><a href="#">收藏的宝贝</a></li>
+                                    </ul>
+                             </li>
+                             <li><a href="#">商品分类</a></li>
+                             <li><a href="#">卖家中心</a></li>
+                             <li><a href="#">联系客服</a></li>
+
+                        </ul>                           
+            </div>
+        </header>
+        <div >
+            <img src="imgs/head.png" style="width:100%; position: relative;z-index: -1;">
+        </div>
+        <div style="background-color:white;">
+        <div id="search" style="width:100%;height: 150px;position: relative;top:20px;display: table;">
+            <div style="display: table-cell;vertical-align: middle;"><img src="imgs/taobao-logo.gif"></div>
+            <div style="position: relative;left:20px;">
+                <ul id="searchul" >
+                <li style="background-color: rgb(253, 93, 34); border-top-left-radius: 5px;border-top-right-radius: 5px;">
+                    <a href="#" style="color:white; " >宝贝</a>
+                </li>
+                <li><a href="#">天猫</a></li>
+                <li><a href="#">店铺</a></li>
+                <br>            
+            </ul>
+            <div id="searchinput" >
+                <form >
+                    <input type="text" placeholder="      秋冬毛衣" >
+                    <button type="submit" >搜索</button>
+                </form>
+            </div>
+            <div id="topdiv"style="position: relative; left:25px;">
+                <a href="#" style="color:orangered;">半身裙</a>
+                <a href="#" >女式衬衫</a>
+                <a href="#" style="color:orangered;">风衣</a>
+                <a href="#" >新款男鞋</a>
+                <a href="#" >夹克外套</a>
+                <a href="#" >男士外套</a>
+                <a href="#" >夹克</a>
+                <a href="#" style="color:orangered;">衬衫</a>
+                <a href="#" >休闲鞋</a>
+                <a href="#" >时尚休闲裤</a>
+                <a href="#" >沙发</a>
+                <a href="#" >男运动鞋</a>
+            </div>
+        </div>
+            <div style="display:table-cell;vertical-align: middle;position: relative;right:80px">
+                <form >
+                    <input name="submit" type="image" src="imgs/erweima.png" style="height:100px">
+                </form>
+            </div>
+        </div>
+
+        <div style="background-color:rgb(243, 241, 241);position: relative;top:5px;">
+        <div id="middlenav">
+            <span id="span1">
+                <a href="#">天猫</a>
+                <a href="#">聚划算</a>
+                <a href="#">天猫超市</a>
+            </span>
+                <span style="color:white; position: relative;left:8px;font-weight: bold;">|</span>
+            <span id="span2">                
+                <a href="#">淘抢购</a>
+                <a href="#">电器城</a>
+                <a href="#">司法拍卖</a>
+                <a href="#">淘宝兴选</a>
+                <a href="#">兴农扶贫</a>
+                <span style="color:white; position: relative;bottom:3px;font-weight: bold;">|</span>
+                <a href="#">飞猪旅行</a>
+                <a href="#">智能生活</a>
+                <a href="#">苏宁易购</a>
+            </span>
+        </div>
+
+        
+        <div id="ad" >
+            <ul id="ad_img">
+                <li><img src="imgs/img1.png" width=600px></li>
+                <li><img src="imgs/img2.png"width=600px></li>
+                <li><img src="imgs/img3.png"width=600px></li>
+                <li><img src="imgs/img4.png"width=600px></li>
+                <li><img src="imgs/img5.png"width=600px></li>
+            </ul>
+            <ul id="ad_num">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>   
+            <div style="position: absolute;">
+                <input class="icon" name="lefticon" type="image" src="imgs/lefticon.png" >
+            </div>         
+            <div style="position: absolute;left:575px;">
+                <input class="icon" name="righticon" type="image" src="imgs/righticon.png" >
+            </div>            
+        </div>
+
+        
+
+        <nav>
+            <div id="zhutishichang" >主题市场</div>
+            <ul id="leftsearchlist">
+                <li>&nbsp;&nbsp;<a href="#">女装</a>/<a href="#">男装</a>/<a href="#">内衣</a></li>
+                <li>&nbsp;&nbsp;<a href="#">鞋靴</a>/<a href="#">箱包</a>/<a href="#">配饰配件</a></li>
+                <li>&nbsp;&nbsp;<a href="#">童装玩具</a>/<a href="#">孕产</a>/<a href="#">用品</a></li>
+                <li>&nbsp;&nbsp;<a href="#">家电</a>/<a href="#">数码</a>/<a href="#">手机</a></li>
+                <li>&nbsp;&nbsp;<a href="#">美妆</a>/<a href="#">洗护</a>/<a href="#">保健品</a></li>
+                <li>&nbsp;&nbsp;<a href="#">饰品</a>/<a href="#">珠宝</a>/<a href="#">手表眼镜</a></li>
+                <li>&nbsp;&nbsp;<a href="#">运动</a>/<a href="#">户外</a>/<a href="#">乐器</a></li>
+                <li>&nbsp;&nbsp;<a href="#">美食</a>/<a href="#">生鲜</a>/<a href="#">零食</a></li>
+                <li>&nbsp;&nbsp;<a href="#">鲜花</a>/<a href="#">宠物</a>/<a href="#">农资</a></li>
+                <li>&nbsp;&nbsp;<a href="#">工具</a>/<a href="#">装修</a>/<a href="#">建材</a></li>
+                <li>&nbsp;&nbsp;<a href="#">汽车</a>/<a href="#">二手车</a>/<a href="#">用品</a></li>
+                <li>&nbsp;&nbsp;<a href="#">办公</a>/<a href="#">DIY</a>/<a href="#">五金电子</a></li>
+                <li>&nbsp;&nbsp;<a href="#">百货</a>/<a href="#">餐厨</a>/<a href="#">家庭保健</a></li>
+                <li>&nbsp;&nbsp;<a href="#">学习</a>/<a href="#">卡券</a>/<a href="#">本地服务</a></li>
+            </ul>
+        </nav>
+
+        <div style="position: absolute;left:850px;bottom:328px;">
+            <input name="submit" type="image" src="imgs/rightimg.png" style="height:280px"> <br><br><br><br>
+            <div style="font-size: 13px;color: gray;">今日热卖</div>
+            <input name="submit" type="image" src="imgs/rightimg2.png" style="float:none;width:160px">
+        </div>
+        <div style="position: absolute;left:230px;bottom:330px;z-index: 2">
+            <div id="hiddentable">
+                    <div class="big">女装</div>
+                    <div><span style="color:orangered">预售好店</span>	<span>气质毛呢</span>	<span>毛衣针织</span>	<span style="color:orangered">皮草羽绒</span>	<span>时尚外套</span>	<span>潮流裙裤</span>	<span>冬上新</span>	<span>毛呢外套</span>	<span>毛衣</span>	<span>裤子</span>	<span>羽绒服</span>	<span>连衣裙</span>	<span>棉衣棉服</span>	<span style="color:orangered">毛针织衫</span>	<span>卫衣绒衫</span>	<span>半身裙</span>	<span>短外套</span>	<span>皮衣皮草</span>	<span>时尚套装</span>	<span>休闲裤</span>	<span>风衣</span>	<span>牛仔裤</span>	<span>衬衫</span>	<span>牛仔外套</span>	<span>T恤</span>	<span>长袖连衣裙</span>	<span>阔腿裤</span>	<span>西装</span>	<span>长风衣</span>	<span>蕾丝衫/雪纺衫</span>	<span>大码女装</span>	<span>大码外套</span>	<span>大码连衣裙</span>	<span>红人推荐</span>	<span>私服名媛</span>	<span>甜美清新</span>	<span>文艺复古</span>	<span>街头潮流</span>	<span>原创设计</span>	<span>通勤丽人</span>	<span>婚纱礼服</span>	<span>民族服装</span></div>
+                    <div>&nbsp;</div>
+                    <div class="big">男装</div>
+                    <div><span style="color:orangered">新品预售</span>	<span>预售好店</span>	<span>品质好物</span>	<span>T恤</span>	<span>衬衫</span>	<span>POLO衫</span>	<span>外套</span>	<span style="color:orangered">休闲裤</span>	<span>牛仔裤</span>	<span>卫衣</span>	<span>夹克</span>	<span style="color:orangered">风衣</span>	<span>西装</span>	<span>牛仔外套</span>	<span>棒球服</span>	<span style="color:orangered">针织衫</span>	<span>运动裤</span>	<span>九分裤</span>	<span>皮衣</span>	<span>套装</span>	<span>开衫</span>	<span>马甲</span>	<span>呢大衣</span>	<span>中老年</span>	<span>情侣装</span>	<span>大码</span>	<span>民族风</span>	<span>专柜大牌</span>	<span>明星网红</span>	<span>原创设计</span></div>
+                    <div class="big" style="margin-top:35px">内衣 </div>
+                    <div><span>法式内衣</span>	<span>无钢圈内衣</span>	<span>内裤女</span>	<span>文胸</span>	<span>内裤男</span>	<span style="color:orangered">长袖睡衣</span>	<span>睡裙</span>	<span style="color:orangered">真丝睡衣</span>	<span>丝袜</span>	<span>船袜</span>	<span>情侣睡衣</span>	<span>抹胸</span>	<span>背心</span>	<span>睡袍</span>	<span>男士睡衣</span>	<span>塑身衣</span>	<span>内衣套装</span>	<span>打底裤</span>	<span>连体睡衣</span>	<span>聚拢文胸</span>	<span>男士袜子</span>	<span>棉袜女</span>	<span>卡通睡衣</span>	<span>无痕内裤</span>	<span>少女文胸</span></div> 
+                               
+            </div>
+        </div>
+
+        <div id="tmallshow">
+            <span><img src="imgs/tmalllogo.png" width="150px"></span>
+            <span style="font-size: 14px;color: gray;">理想生活上天猫</span>  
+            <ul id="tmallnum">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            <div id="tmallad">
+                <ul id="tmalladimg">
+                    <li><img src="imgs\tmall1.png"></li>
+                    <li><img src="imgs\tmall2.png"></li>
+                    <li><img src="imgs\tmall3.png"></li>
+                    <li><img src="imgs\tmall4.png"></li>
+                    <li><img src="imgs\tmall5.png"></li>
+                    <li><img src="imgs\tmall6.png"></li>
+                </ul>
+            </div>
+            <div style="position: absolute;">
+                    <input class="icon2" name="lefticon1" type="image" src="imgs/lefticon.png" >
+                </div>         
+                <div style="position: absolute;left:575px;">
+                    <input class="icon2" name="righticon1" type="image" src="imgs/righticon.png" >
+                </div> 
+                    
+        </div>
+
+        <div id=rightnav>
+            <div style="width:220px;height:160px;background-color:white;text-align: center;">
+                <input name="submit" type="image" src="imgs/touxiang.png" width="50px" >
+                <div style="font-size: 13px;color: gray">Hi!您好</div>
+                <div>
+                    <button class="button1" type="submit" >领淘金币抵钱</button>
+                    <button class="button1" type="submit">会员俱乐部</button>
+                </div>
+                <div>
+                        <button class="button2" type="submit" >登录</button>
+                        <button class="button2" type="submit">注册</button>
+                        <button class="button2" type="submit">开店</button>
+                </div>
+                
+            </div>
+            <div style="text-align: center;background-color: rgba(233, 136, 25, 0.267);height:30px;line-height: 30px"><a href="#" style="color: orangered;font-size: 12px">网上有害信息举报专区</a></div>
+            <div>
+                <ul id=rightnavul>
+                    <li><a href="#">公告</a></li>
+                    <li><a href="#">规则</a></li>
+                    <li><a href="#">论坛</a></li>
+                    <li><a href="#">安全</a></li>
+                    <li><a href="#">公益</a></li>                   
+                </ul>
+            </div>
+            <div>&nbsp;</div>
+            <div style="color: orangered;font-size:13px;margin:5px">大英博物馆等8大博物馆参与天猫双11 </div>
+            <div style="font-size: 13px;margin-left:5px;margin-right: 5px; margin-top:15px;margin-bottom:30px;">淘宝上线闺蜜小黑群&nbsp;新版手机天猫上线</div>
+            <div>
+                <img src="imgs\rightnavbtns.png" width="220px" height="210px">
+            </div>
+            <div>
+                <div style="margin-top:15px;padding:5px;">
+                    <span style="font-size: 18px;font-weight: bolder;font-family: 'simhei';color:rgb(58, 57, 57);">阿里APP</span>
+                <span><a href="#" style="font-size: 13px;color: rgb(73, 73, 73);float:right;margin-right:5px;margin-top:5px;">更多→</a></span>
+                </div>
+                
+                <div id="rightnavbtns" style="margin-top:10px;">
+                        <input id="rightnavbtn1" name="submit" type="image" src="imgs/rightnavbtn1.png" >
+                        <input name="submit" type="image" src="imgs/rightnavbtn2.png" >
+                        <input name="submit" type="image" src="imgs/rightnavbtn3.png" >
+                        <input name="submit" type="image" src="imgs/rightnavbtn4.png" >
+                        <input name="submit" type="image" src="imgs/rightnavbtn5.png" >
+                        <input name="submit" type="image" src="imgs/rightnavbtn6.png" >
+                        <input name="submit" type="image" src="imgs/rightnavbtn7.png" >
+                        <input name="submit" type="image" src="imgs/rightnavbtn8.png" >
+                        <img id="saoyisao" src="imgs/saoyisao.png" style="width:80px;position: relative;bottom:185px;">
+                </div>
+            </div>
+        </div>
+
+        <div id="taobaotoutiao">
+            <div>
+                <div style="margin-top:50px;margin-left: 15px;"><img src="imgs\taobaotoutiao.png" width="160px"></div>
+                <div style="font-size: 15px;color:gray;margin:20px;">让你的生活更有趣</div>
+            </div>
+            <div>
+                <div style="margin: 40px;"><img src="imgs\toutiaoimg.png" width="200px"></div>
+            </div>
+            <div>
+                <div style="margin-top:50px;margin-bottom:20px">
+                    <a href="#">百万壕声 森海塞尔HE 1仅售111万</a>
+                    <a href="#" style="position: relative;left:200px;font-size: 14px;">更多→</a>
+                </div>
+                <div style="font-size: 14px;color:gray;width:500px;line-height: 20px;"> 我们郑重宣布：你的听觉视觉甚至触觉都将再一次被颠覆。 今年天猫双11 森海塞尔携手天猫小黑盒将在天猫旗舰店首发两款奢到荼蘼的特别限定版HE 1！ 这款首家111万元</div>
+            </div>
+            
+        </div>
+        </div>
+
+       
+<div style="background-color: rgb(243, 241, 241)">
+        <div id="indexsheet" >
+                <img style="text-align: center;" src="imgs\smallogo.png" width="35px">
+            <ul >
+                
+                <li style="border-top-left-radius: 10px;border-top-right-radius: 10px;"><a href="#shyjs" style="color:orangered">爱逛<br>好货</a></li>
+                <li><a href="#aiguanghaohuo" style="color: red">好店<br>直播</a></li>
+                <li><a href="#pzshj_2S" style="color: purple">品质<br>特色</a></li>
+                <li><a href="#shzyh" style="color: greenyellow">实惠<br>特卖</a></li>
+                <li><a href="#cnxh" style="color: orangered">猜你<br>喜欢</a></li>
+                <li><a href="#" style="color: gray">顶部</a></li>
+                <li><a href="#" style="color: gray">反馈</a></li>
+                <li style="border-bottom-left-radius: 10px;border-bottom-right-radius: 10px;"><a href="#" style="color:gray;">暴恐<br>举报</a></li>
+            </ul>
+        </div>
+
+        <div id="gg" style="position: relative;bottom:40px;" >
+            <input  type="image" src="imgs\gg1.png" style="margin-left: 30px;">
+            <input  type="image" src="imgs\gg2.png" >
+            <input  type="image" src="imgs\gg3.png" >
+        </div>
+
+        <div >   
+            <input type="image" src="imgs\guanggao.png" width="1200px"  style="margin-left:30px;position: relative;bottom:45px;">
+        </div>
+        <div id="shyjs"> 
+            <div>
+                <img src="imgs\shyjs.png" width="130px"> <span style="font-size: 13px; color: gray">发现属于你的生活方式</span>
+            </div>
+            <div class="shyjsimg">
+                    <div><input  type="image" src="imgs\shyjs1.png"></div>
+                    <div class="shyjsimg_2">
+                            <div><a href="#">理想家</a></div>
+                            <div >想要这个家</div>
+                            <div>❤人气12800</div>
+                    </div>
+            </div>
+            <div class="shyjsimg">
+                    <div><input  type="image" src="imgs\shyjs2.png"></div>
+                    <div class="shyjsimg_2">
+                            <div><a href="#">钓鱼达人</a></div>
+                            <div >渔您相遇</div>
+                            <div>❤人气12800</div>
+                    </div>
+            </div>
+            <div class="shyjsimg">
+                    <div><input  type="image" src="imgs\shyjs3.png"></div>
+                    <div class="shyjsimg_2">
+                            <div><a href="#">装修家</a></div>
+                            <div >造我的舒适家</div>
+                            <div>❤人气12800</div>
+                    </div>
+            </div>
+            <div class="shyjsimg">
+                    <div><input  type="image" src="imgs\shyjs4.png"></div>
+                    <div class="shyjsimg_2">
+                            <div><a href="#">机车骑士</a></div>
+                            <div >就是这么霸气</div>
+                            <div>❤人气12800</div>
+                    </div>
+            </div>
+            <div class="shyjsimg">
+                    <div><input  type="image" src="imgs\shyjs5.png"></div>
+                    <div class="shyjsimg_2">
+                            <div><a href="#">智慧家</a></div>
+                            <div >感受科技美好</div>
+                            <div>❤人气12800</div>
+                    </div>
+            </div>
+            
+
+        
+            
+        </div>
+
+        <div id="aiguanghaohuo">                  
+                <div id="youhaohuo" style="background-color:white;margin-left:30px;">
+                    <img src="imgs\youhaohuo.png" style="width:100px;margin:0">
+                    <span style="font-size: 14px;color:gray;">与品质生活不期而遇</span>
+                    <div>
+                    <img src="imgs\yhh1.png">
+                    <img src="imgs\yhh2.png">
+                    <img src="imgs\yhh3.png">
+                    </div>
+                    <div>
+                        <span class="big"><a href="#">INSIDE 简约纯色宽松</a></span>
+                        <span class="big"><a href="#">惠尔顿五点式车载</a></span>
+                        <span class="big"><a href="#">【芬兰suunto】颂拓</a></span>
+                    </div>
+                    <div>
+                        <span class="small">品牌皮标清晰硬朗，装饰</span>
+                        <span class="small">实心注塑椅身，防撞抗压,</span>
+                        <span class="small">suunto是世界领先之运动</span>
+                    </div>
+                    <div>
+                            <span class="smallb">☺0人说好</span>
+                            <span class="smallb">☺2人说好</span>
+                            <span class="smallb">☺0人说好</span>
+                    </div>
+
+                    <div>
+                    <img src="imgs\yhh4.png">
+                    <img src="imgs\yhh5.png">
+                    <img src="imgs\yhh6.png">
+                    </div>
+                    <div>
+                            <span class="big"><a href="#">ER大码飞行夹克</a></span>
+                            <span class="big"><a href="#">jupevendue短款大毛</a></span>
+                            <span class="big"><a href="#">透蜜美白淡斑面膜</a></span>
+                        </div>
+                        <div>
+                            <span class="small">字母刺绣工艺，细节彰显</span>
+                            <span class="small">原色的豹子毛，低绒厚实</span>
+                            <span class="small">导入式美白，肌肤净白</span>
+                        </div>
+                        <div>
+                                <span class="smallb">☺1人说好</span>
+                                <span class="smallb">☺0人说好</span>
+                                <span class="smallb">☺3人说好</span>
+                        </div>
+                </div>
+                       
+                <div id="aiguangjie" style="background-color: white">
+                        <img src="imgs\aiguangjie.png" style="width:100px;margin:0">
+                    <span style="font-size: 14px;color:gray;">献给聪明可爱的你</span>
+                    <div>
+                    <img src="imgs\agj1.png">
+                    <img src="imgs\agj2.png">
+                    <img src="imgs\agj3.png">
+                    </div>
+
+                    <div >
+                        <span class="small"><a href="#">宝优妮掸子家用除尘可伸缩加长杆静电去尘掸打扫</a></span>
+                        <span class="small"><a href="#">冬季耳罩保暖男折叠后戴毛绒耳套女耳包耳捂学生</a></span>
+                        <span class="small"><a href="#">JCPAL Macbook Air Pro11 12 13 15笔记本高透</a></span>
+                    </div>
+                    <div>
+                            <span class="smallc">放飞自我的兔小姐</span>
+                            <span class="smallc">潮流女孩girl</span>
+                            <span class="smallc">潮流女孩girl</span>
+                    </div>
+
+                    <div style="margin-top:40px">
+                    <img src="imgs\agj4.png">
+                    <img src="imgs\agj5.png">
+                    <img src="imgs\agj6.png">
+                    </div>
+                    
+                        <div>
+                            <span class="small"><a href="#">加拿大ENDEAVOR滑雪板单板套装男女单板</a></span>
+                            <span class="small"><a href="#">米其林车载充气泵汽车便携式小轿车加气多功能</a></span>
+                            <span class="small"><a href="#">沙发脚踏 布艺脚踏凳沙发凳换鞋凳脚凳</a></span>
+                        </div>
+                        <div>
+                                <span class="smallc">潮范时光机</span>
+                                <span class="smallc">潮范时光机</span>
+                                <span class="smallc">爱逛1***1</span>
+                        </div>
+                </div>          
+        </div>
+
+        
+        <div id="pzshj">
+            <div >
+                <div style="color:dodgerblue;font-size: 25px;line-height:40px;font-weight: bolder; margin-bottom: 40px;">|品质生活家</div>
+            </div>
+
+            <div id="pzshj_2">
+                <input name="submit" type="image" src="imgs\pzshj1.png">
+                <input name="submit" type="image" src="imgs\pzshj2.png">
+                <input name="submit" type="image" src="imgs\pzshj3.png"> 
+            </div>
+            <div>
+                <input name="submit" type="image" src="imgs/pzshj4.png" style="position:relative;bottom:70px; width:340px;height:300px;border: rgba(128, 128, 128, 0.322) 1px solid;">               
+             </div>
+            
+        </div>
+
+        <div id="shzyh">
+                <div style="color:green;font-size: 25px;line-height:40px;font-weight: bolder; margin-bottom: 20px;">|实惠专业户</div>
+                <hr>
+                <input name="submit" type="image" src="imgs\shzyh1.png">
+                <input name="submit" type="image" src="imgs\shzyh2.png">
+                <input name="submit" type="image" src="imgs\shzyh3.png">
+                <input name="submit" type="image" src="imgs\shzyh4.png">
+                <input name="submit" type="image" src="imgs\shzyh5.png">
+        </div>
+        <div id="cnxh">
+                <div style="color:rgb(255, 102, 0);font-size: 25px;line-height:40px;font-weight: bolder; margin-bottom: 40px;">|猜你喜欢</div>
+                <input name="submit" type="image" src="imgs\cnxh1.png">
+                <input name="submit" type="image" src="imgs\cnxh2.png">
+                <input name="submit" type="image" src="imgs\cnxh3.png">
+                <input name="submit" type="image" src="imgs\cnxh4.png">
+                <input name="submit" type="image" src="imgs\cnxh5.png">
+
+        </div>
+</div>
+
+    <div>
+        <footer style="background-color:rgb(243, 241, 241)">
+            <hr>
+            <div>阿里巴巴集团|淘宝网|天猫|聚划算|全球速卖通|阿里巴巴国际交易市场|1688|阿里妈妈|飞猪|阿里云计算|AliOS|阿里通信|一淘|万网|高德|UC|友盟</div>
+            <div>虾米|大麦网|钉钉|支付宝|优酷|土豆|阿里健康|阿里影业|阿里体育|网商银行</div>
+            <hr>
+            <div><span>关于淘宝</span><span>合作伙伴</span><span>营销中心</span><span>廉正举报</span><span>联系客服</span><span>开放平台</span><span>诚征英才</span><span>联系我们</span><span>网站地图</span><span>法律声明及隐私权政策</span><span>知识产权</span> |<span>© 2003-现在 Taobao.com 版权所有</span> </div>
+            <div><span>网络文化经营许可证：浙网文[2016]0268-027号</span>|<span>增值电信业务经营许可证：浙B2-20080224</span>|<span>信息网络传播视听许可证：1109364号</span>|<span>互联网违法和不良信息举报电话：0571-81683755 blxxjb@alibaba-inc.com</span></div>  
+            <div><span>浙公网安备 33010002000078号</span> |<span>（浙）网械平台备字[2018]第00004号</span>|<span>出版物网络交易平台服务经营备案证：新出发浙备字第002号</span>|<span>互联网药品信息服务资格证书编号：（浙）-经营性-2018-0010</span></div>
+        <img src="imgs\foot.png" width="1220px">
+        </footer>
+    </div>
+        
+    </body>
+    </html>
